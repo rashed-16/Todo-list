@@ -1,31 +1,85 @@
+body {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
 .App {
-  border: 1px solid #3d3d3d;
-  margin: 50px 30px;
-  padding: 25px 15px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  width: 300px;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 10px;
 }
 
 .to-do-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.to-do-container ul li {
-  width: 170px;
-  overflow-wrap: break-word;
-  list-style-type: "👉";
-  cursor: pointer;
-}
-
-.done {
-  text-decoration: line-through;
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
 }
 
 .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.item:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.done {
+  text-decoration: line-through;
+  color: #d3d3d3;
+}
+
+input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  width: 80%;
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  background: #ff7eb3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff4f8b;
 }
 
 .trash {
   cursor: pointer;
+  color: red;
+  font-weight: bold;
 }
